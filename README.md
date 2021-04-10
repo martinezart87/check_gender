@@ -11,8 +11,15 @@ Aplikację wykonano w:
 - PHP 7.4 
 - Laravel
 
+## Demo
+
+http://mswierczek.sldc.pl/check_gender/
+
 ## Lokalne uruchomienie
 
-Aby przetestować API lokalnie, wystarczy pobrać cały projekt i przy użyciu composera wykonać polecenie uruchamiające serwer: 
+Jeżeli jest zainstalowany pakiet Laravela to za pomocą composera wykonać polecenie uruchamiające serwer:
 
 php artisan serve
+
+Jeżeli chcesz uruchomić projekt na innym lokalnym serwerze, np XAMPP, to musisz zmienić nazwę pliku:
+server.php na index.php. Plik znajduje się w katalogu głównym.
