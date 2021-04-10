@@ -1,6 +1,6 @@
 function sendData(name, code) {
     $.ajax({
-        url: "/",
+        url: window.location,
         type: "POST",
         data: {
             code: code,
