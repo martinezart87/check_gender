@@ -17,9 +17,8 @@ http://mswierczek.sldc.pl/check_gender/
 
 ## Lokalne uruchomienie
 
-Jeżeli jest zainstalowany pakiet Laravela to za pomocą composera wykonać polecenie uruchamiające serwer:
+Aplikację można uruchomić za pomocą wbudowanego serwera programistycznego wykonując w konsoli polecenie:
 
 php artisan serve
 
-Jeżeli chcesz uruchomić projekt na innym lokalnym serwerze, np XAMPP, to musisz zmienić nazwę pliku:
-server.php na index.php. Plik znajduje się w katalogu głównym.
+Do aplikacji dodano również w katalogu głównym pliki index.php oraz .htaccess, dzięki czemu aplikacja może zostać uruchomiona na innych zewnętrznych lub lokalnych serwerach (np. XAMPP) 
