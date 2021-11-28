@@ -22,7 +22,6 @@
         .red {
             color: red;
         }
-
     </style>
 </head>
 
@@ -34,7 +33,7 @@
         <div class="row">
             <div class="col-8">
                 @empty($countries)
-                    <p class="bg-danger text-white p-1">REST COUNTRIES API ERROR. Check Log file in strogae/logs/laravel.log
+                    <p class="bg-warning text-black p-1">REST COUNTRIES API has been turned off.
                     </p>
                 @endempty
             </div>
@@ -48,10 +47,12 @@
                     <div class="form-group">
                         <label for="country">Country <span class="red">*</span></label>
                         <select id="country" name="country" class="form-control" required>
-                            <option value="">--- select ---</option>
+                            <!-- <option value="">--- select ---</option> -->
                             @foreach ($countries as $country)
                                 <option value="{{ $country['alpha2Code'] }}">{{ $country['name'] }}</option>
                             @endforeach
+                                <option value="PL">Poland</option>
+                                <option value="CZ">Czech Republic</option>
                         </select>
                     </div>
                     <button id="sendData" type="button" class="btn btn-primary">Check Gender</button>
