@@ -11,10 +11,12 @@ class CountriesAPI
     public function __construct()
     {
         $this->URL = "https://restcountries.eu/rest/v2/region/europe";
+        $this->URL = "";
     }
 
     public function getCountries() : array
     {
+        return [];
 
         $status = trim(get_headers($this->URL)[0]);
         if ($status !== 'HTTP/1.1 200') {
