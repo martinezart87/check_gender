@@ -13,7 +13,7 @@ Aplikację wykonano w:
 
 ## Demo
 
-http://mswierczek.sldc.pl/check_gender/
+http://checkgender.mrbl.pl/
 
 ## Lokalne uruchomienie
 
